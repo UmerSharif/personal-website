@@ -17,7 +17,7 @@ export default function Section() {
           </p>
           <div className="cta">
             <Link to="#" className="btn">
-              See Projects
+              <span>See Projects</span>
             </Link>
           </div>
         </div>

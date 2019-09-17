@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaWindowClose } from "react-icons/fa";
+import { FaBars, FaWindowClose, FaCode } from "react-icons/fa";
 import "./Header.scss";
 
 export default function Header() {
@@ -10,7 +10,7 @@ export default function Header() {
       <nav>
         <div className="nav-brand">
           <Link to="#">
-            <img src="/images/logo.png" alt="" />
+            <FaCode className="fa__icons" />
           </Link>
         </div>
         <div className="menu-icons">
