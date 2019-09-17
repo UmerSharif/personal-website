@@ -41,11 +41,31 @@ nav {
   background-color: #d7d4ed;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -26rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 100;
-  transition: all 700ns ease-in-out;
+  transition: all 0.25s;
+}
+
+.nav-list.active {
+  right: 0;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.nav-item {
+  margin: 1.5rem 0;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #696166;
 }

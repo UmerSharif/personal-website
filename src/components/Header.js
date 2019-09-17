@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaWindowClose } from "react-icons/fa";
 import "./Header.scss";
 
 export default function Header() {
+  const [active, setActive] = useState(false);
   return (
     <header className="container">
       <nav>
@@ -12,12 +13,15 @@ export default function Header() {
             <img src="/images/logo.png" alt="" />
           </Link>
         </div>
-        <div className="menu-icons open">
-          <FaBars className="fa__icons" />
+        <div className="menu-icons">
+          <FaBars className="fa__icons" onClick={() => setActive(!active)} />
         </div>
-        <ul className="nav-list">
+        <ul className={active ? "nav-list active" : "nav-list"}>
           <div className="menu-icons close">
-            <FaWindowClose className="fa__icons" />
+            <FaWindowClose
+              className="fa__icons"
+              onClick={() => setActive(!active)}
+            />
           </div>
           <li className="nav-item">
             <Link to="#" className="nav-link">
