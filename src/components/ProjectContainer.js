@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./ProjectContainer.scss";
 
 export default function ProjectContainer() {
   return (
@@ -19,6 +21,18 @@ export default function ProjectContainer() {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
               blanditiis a veritatis molestiae enim molestias ipsa magnam.
             </p>
+            {/* button */}
+            <div className="cta">
+              <Link to="#" className="btn">
+                <span>See Projects</span>
+              </Link>
+            </div>
+
+            {/* bottom buttons */}
+            <div className="bottom-buttons">
+              <div className="btn-github">github</div>
+              <div className="btn-info">info</div>
+            </div>
           </div>
 
           <div className="activities-grid-item star-gazing">
