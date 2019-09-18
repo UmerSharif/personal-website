@@ -47,12 +47,12 @@
 
 .activities-grid-item {
   height: 45rem;
-  padding: 5rem;
-  color: beige;
+  padding: 2rem 5rem 0 5rem;
+  color: white;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   cursor: pointer;
   z-index: 1;
 }
@@ -66,11 +66,21 @@
   // background: linear-gradient(to bottom, #fcac5f, #f57978, #ef4d8d);
   background: linear-gradient(to bottom, #a357d3, #f57978, #ef4d8d);
   z-index: -1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.activities-grid-item {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+  }
 }
 
 .btn {
   padding: 10px 20px;
-  border: 1px solid #ff4081;
+  border: 1.5px solid white;
   display: inline-block;
   position: relative;
   -webkit-transition: all 0.2s ease;
@@ -97,10 +107,12 @@
 .btn span {
   position: relative;
   z-index: 5;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 .btn:hover {
   color: #fff;
+  border: 1.5px solid #ff4081;
 }
 .btn:hover::before {
   -webkit-transform: scaleX(200);
@@ -108,6 +120,8 @@
   transform: scaleX(200);
   opacity: 1;
 }
+
+//icons
 
 .bottom-buttons {
   position: absolute;
@@ -120,14 +134,55 @@
   width: 100%;
 
   .btn__common {
+    display: flex;
     height: 6rem;
     background: #faf8f9;
+    align-items: center;
+    justify-content: center;
   }
 
   .btn-github {
     border-bottom: 2px solid #ef508b;
+    border-bottom-left-radius: 5px;
+    .fa__icons {
+      font-size: 3.5rem;
+      color: #ef508b;
+      cursor: pointer;
+
+      &:hover {
+        color: #a357d3;
+      }
+    }
   }
   .btn-info {
     border-bottom: 2px solid #55adee;
+    border-bottom-right-radius: 5px;
+    .fa__icons {
+      font-size: 3.5rem;
+      color: #55adee;
+      cursor: pointer;
+
+      &:hover {
+        color: #a357d3;
+      }
+    }
   }
+}
+
+.technologies {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    font-size: 1.5rem;
+  }
+}
+
+.hr__line {
+  width: 100%;
+  border: 1px solid white;
+  margin: 9px 0 3px 0;
 }
