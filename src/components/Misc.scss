@@ -1,0 +1,9 @@
+.miscellenous-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.miscellenous-grid-item p {
+  color: rgba($color: #000000, $alpha: 0.7);
+}

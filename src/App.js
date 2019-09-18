@@ -4,6 +4,8 @@ import "./App.css";
 import Header from "./components/Header";
 import Section from "./components/Section";
 import ProjectContainer from "./components/ProjectContainer";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Header />
         <Section />
         <ProjectContainer />
+        <About />
+        <Footer />
       </>
     </Router>
   );
