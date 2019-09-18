@@ -1,4 +1,31 @@
 footer {
+  height: 12rem;
   padding: 2.5rem;
-  background-color: #a357d3;
+  background-color: #402a67;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+
+  .social-icons {
+    font-size: 3rem;
+    color: white;
+  }
+}
+
+.copyright {
+  margin-top: 2rem;
+}
+.copyright p {
+  font-size: 1.5rem;
+  color: white;
 }

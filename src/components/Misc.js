@@ -26,6 +26,20 @@ export default function Misc() {
               tenetur{" "}
             </p>
           </div>
+          <div className="miscellenous-grid-item">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit . Ullam,
+              quam vel quae consequuntur hic consectetur eveniet molestias
+              tenetur{" "}
+            </p>
+          </div>
+          <div className="miscellenous-grid-item">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit . Ullam,
+              quam vel quae consequuntur hic consectetur eveniet molestias
+              tenetur{" "}
+            </p>
+          </div>
         </div>
       </div>
     </section>

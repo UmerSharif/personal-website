@@ -41,7 +41,8 @@ nav {
 .nav-list {
   width: 25rem;
   height: 100vh;
-  background-color: #d7d4ed;
+  // background-color: #d7d4ed;
+  background: linear-gradient(to bottom, #a357d3, #f57978, #ef4d8d);
   position: fixed;
   top: 0;
   right: -26rem;
@@ -70,5 +71,5 @@ nav {
 .nav-link {
   font-size: 1.6rem;
   text-transform: uppercase;
-  color: #696166;
+  color: white;
 }
