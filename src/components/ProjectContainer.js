@@ -17,6 +17,7 @@ export default function ProjectContainer() {
         <div className="activities-grid">
           <div className="activities-grid-item star-gazing">
             <h1>Project 1</h1>
+
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
               blanditiis a veritatis molestiae enim molestias ipsa magnam.
@@ -30,8 +31,8 @@ export default function ProjectContainer() {
 
             {/* bottom buttons */}
             <div className="bottom-buttons">
-              <div className="btn-github">github</div>
-              <div className="btn-info">info</div>
+              <div className="btn-github btn__common">github</div>
+              <div className="btn-info btn__common">info</div>
             </div>
           </div>
 

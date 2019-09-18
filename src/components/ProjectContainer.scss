@@ -63,11 +63,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    42deg,
-    rgba(59, 38, 103, 0.9) 33%,
-    rgba(188, 120, 236, 0.8) 125%
-  );
+  // background: linear-gradient(to bottom, #fcac5f, #f57978, #ef4d8d);
+  background: linear-gradient(to bottom, #a357d3, #f57978, #ef4d8d);
   z-index: -1;
 }
 
@@ -116,15 +113,21 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  display: flex;
+  //   display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.1rem;
   width: 100%;
 
+  .btn__common {
+    height: 6rem;
+    background: #faf8f9;
+  }
+
   .btn-github {
-    width: 50%;
+    border-bottom: 2px solid #ef508b;
   }
   .btn-info {
-    width: 50%;
+    border-bottom: 2px solid #55adee;
   }
 }
-
-//btn styles
