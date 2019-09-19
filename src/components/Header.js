@@ -25,13 +25,13 @@ export default function Header() {
               />
             </div>
             <li className="nav-item">
-              <Link to="#" className="nav-link">
-                Portfolio
+              <Link to="#" className="nav-link current">
+                Home
               </Link>
             </li>
             <li className="nav-item">
               <Link to="#" className="nav-link">
-                Recent Projects
+                Portfolio
               </Link>
             </li>
             <li className="nav-item">

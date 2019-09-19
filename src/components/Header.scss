@@ -73,3 +73,62 @@ nav {
   text-transform: uppercase;
   color: white;
 }
+
+//media queries
+
+@media screen and (min-width: 700px) {
+  header {
+    height: 8rem;
+  }
+
+  .nav-brand {
+    width: 3.5rem;
+  }
+
+  .nav-list {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    background: none;
+    position: initial;
+    top: initial;
+    right: initial;
+    flex-direction: row;
+    transition: initial;
+  }
+
+  .menu-icons .fa__icons {
+    display: none;
+  }
+  .nav-item {
+    margin: 0 2.5rem;
+  }
+
+  .nav-link,
+  .current {
+    position: relative;
+    font-size: 1.4rem;
+  }
+
+  .nav-link::before,
+  current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    background-color: #ef4d8d;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms;
+  }
+
+  .current::before {
+    transform: scaleX(1);
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+}

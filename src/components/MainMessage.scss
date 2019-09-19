@@ -15,7 +15,7 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -3px;
   width: 100%;
   height: 4.7rem;
   background: url("/images/wave-small.png") center no-repeat;
@@ -34,7 +34,7 @@
   }
   h1 {
     font-family: "Aldrich", sans-serif;
-    font-size: 4rem;
+    font-size: 2rem;
     margin: 1rem 0;
   }
 
@@ -87,3 +87,49 @@
 }
 
 //btn styles
+
+// media queries
+
+@media screen and (min-width: 350px) {
+  .main-message {
+    transform: translateY(40%);
+  }
+}
+@media screen and (min-width: 470px) {
+  .hero::before {
+    height: 9.4rem;
+    background: url("/images/wave-medium.png");
+    background-size: cover;
+  }
+
+  .main-message h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .main-message {
+    transform: translateY(50%);
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .hero::before {
+    height: 22.7rem;
+    background: url("/images/wave-large.png");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 75vh;
+  }
+}

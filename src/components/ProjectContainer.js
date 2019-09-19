@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGithubSquare, FaInfoCircle, FaReact } from "react-icons/fa";
+import { FaGithubSquare, FaInfoCircle } from "react-icons/fa";
 import "./ProjectContainer.scss";
 
 export default function ProjectContainer() {
@@ -8,7 +8,7 @@ export default function ProjectContainer() {
     <section className="work-experience">
       <div className="container">
         <div className="title-heading">
-          <h1>Thrilling Projects</h1>
+          <h1>Portfolio Projects</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit . Ullam,
             quam vel quae consequuntur hic consectetur eveniet molestias tenetur{" "}
