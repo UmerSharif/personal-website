@@ -17,13 +17,14 @@ export default function ProjectContainer() {
       setProject("");
     }
   };
-  /* testing */
 
   return (
     <>
-      {project && <BackDrop />}
       {project && (
-        <ViewDetail projectId={project} CloseModel={handleCloseModel} />
+        <>
+          <BackDrop />
+          <ViewDetail projectId={project} CloseModel={handleCloseModel} />)
+        </>
       )}
       <section className="work-experience">
         <div className="container">

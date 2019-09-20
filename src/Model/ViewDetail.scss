@@ -1,10 +1,79 @@
 .project-info-model {
   position: absolute;
-  width: 90%;
+  width: 60%;
   background: #f1eeee;
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.26);
-  top: 20vh;
-  left: 5%;
+  //   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.26);
+  top: 40vh;
+  left: 20%;
   border-radius: 3px;
   z-index: 100;
+  padding: 6rem 5rem 6rem 5rem;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.4) 6px 5px 12px;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
+
+.model-container-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.project-title h1 {
+  font-size: 2.5rem;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.close-model-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  .fa__icons {
+    font-size: 5rem;
+    color: #ff4081;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .project-info-model {
+    position: absolute;
+    width: 80%;
+    background: #f1eeee;
+    //   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.26);
+    top: 40vh;
+    left: 10%;
+    border-radius: 3px;
+    z-index: 100;
+    padding: 6rem 1rem 6rem 1rem;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.4) 6px 5px 12px;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+}
+
+// .close-model-button-bottom {
+//   position: absolute;
+//   bottom: 1rem;
+//   left: 28rem;
+//   .fa__icons {
+//     font-size: 2rem;
+//     color: white;
+//     cursor: pointer;
+//   }
+
+//   &:hover {
+//     color: #ff4081;
+//   }
+// }
+
+//button bottom
