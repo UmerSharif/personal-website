@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaGithubSquare, FaInfoCircle } from "react-icons/fa";
 import "./ProjectContainer.scss";
 import ViewDetail from "../Model/ViewDetail";
+import BackDrop from "../Model/BackDrop";
 
 export default function ProjectContainer() {
   /* testing */
@@ -14,6 +15,7 @@ export default function ProjectContainer() {
 
   return (
     <>
+      {project && <BackDrop />}
       <section className="work-experience">
         <div className="container">
           <div className="title-heading">
