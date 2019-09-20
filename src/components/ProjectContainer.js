@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { FaGithubSquare, FaInfoCircle } from "react-icons/fa";
 import "./ProjectContainer.scss";
 import ViewDetail from "../Model/ViewDetail";
@@ -69,17 +68,19 @@ export default function ProjectContainer() {
               {/* bottom buttons */}
               <div className="bottom-buttons">
                 <div className="btn-github btn__common">
-                  <Link to="#">
+                  <a
+                    href="https://github.com/UmerSharif/event-manager"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaGithubSquare className="fa__icons" />
-                  </Link>
+                  </a>
                 </div>
                 <div
                   className="btn-info btn__common"
                   onClick={() => HandleClick("1")}
                 >
-                  <Link to="#">
-                    <FaInfoCircle className="fa__icons" />
-                  </Link>
+                  <FaInfoCircle className="fa__icons" />
                 </div>
               </div>
             </div>
@@ -115,17 +116,15 @@ export default function ProjectContainer() {
               {/* bottom buttons */}
               <div className="bottom-buttons">
                 <div className="btn-github btn__common">
-                  <Link to="#">
+                  <a href="#">
                     <FaGithubSquare className="fa__icons" />
-                  </Link>
+                  </a>
                 </div>
                 <div
                   className="btn-info btn__common"
                   onClick={() => HandleClick("2")}
                 >
-                  <Link to="#">
-                    <FaInfoCircle className="fa__icons" />
-                  </Link>
+                  <FaInfoCircle className="fa__icons" />
                 </div>
               </div>
             </div>
@@ -161,17 +160,15 @@ export default function ProjectContainer() {
               {/* bottom buttons */}
               <div className="bottom-buttons">
                 <div className="btn-github btn__common">
-                  <Link to="#">
+                  <a href="#">
                     <FaGithubSquare className="fa__icons" />
-                  </Link>
+                  </a>
                 </div>
                 <div
                   className="btn-info btn__common"
                   onClick={() => HandleClick("3")}
                 >
-                  <Link to="#">
-                    <FaInfoCircle className="fa__icons" />
-                  </Link>
+                  <FaInfoCircle className="fa__icons" />
                 </div>
               </div>
             </div>
@@ -207,17 +204,15 @@ export default function ProjectContainer() {
               {/* bottom buttons */}
               <div className="bottom-buttons">
                 <div className="btn-github btn__common">
-                  <Link to="#">
+                  <a href="#">
                     <FaGithubSquare className="fa__icons" />
-                  </Link>
+                  </a>
                 </div>
                 <div
                   className="btn-info btn__common"
                   onClick={() => HandleClick("4")}
                 >
-                  <Link to="#">
-                    <FaInfoCircle className="fa__icons" />
-                  </Link>
+                  <FaInfoCircle className="fa__icons" />
                 </div>
               </div>
             </div>
@@ -253,17 +248,15 @@ export default function ProjectContainer() {
               {/* bottom buttons */}
               <div className="bottom-buttons">
                 <div className="btn-github btn__common">
-                  <Link to="#">
+                  <a href="#">
                     <FaGithubSquare className="fa__icons" />
-                  </Link>
+                  </a>
                 </div>
                 <div
                   className="btn-info btn__common"
                   onClick={() => HandleClick("5")}
                 >
-                  <Link to="#">
-                    <FaInfoCircle className="fa__icons" />
-                  </Link>
+                  <FaInfoCircle className="fa__icons" />
                 </div>
               </div>
             </div>
@@ -299,9 +292,9 @@ export default function ProjectContainer() {
               {/* bottom buttons */}
               <div className="bottom-buttons">
                 <div className="btn-github btn__common">
-                  <Link to="#">
+                  <a href="#">
                     <FaGithubSquare className="fa__icons" />
-                  </Link>
+                  </a>
                 </div>
                 <div
                   className="btn-info btn__common"
