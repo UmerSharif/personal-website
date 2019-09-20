@@ -1,23 +1,36 @@
 import React from "react";
+import "./ViewDetail.scss";
 
-export default function ViewDetail({ projectId }) {
+export default function ViewDetail(props) {
   const Info = [
-    { id: "1", name: "project 1", image1: "profile-pic.jpg" },
-    { id: "2", name: "project 2", image1: "profile-me.jpg" }
+    {
+      id: "1",
+      name: "Eventify",
+      images: {
+        img_1: "profile-pic.jpg",
+        img_2: "profile-me.jpg",
+        img_3: ""
+      }
+    }
   ];
 
   return (
-    <div className="project-info">
+    <div className="project-info-model">
       {Info.map(project => {
-        if (projectId === project.id) {
+        if (props.projectId === project.id) {
           return (
-            <div key={project.id}>
+            <div key={project.id} className="image-container">
               {project.name}
-              <img src={`/images/${project.image1}`} alt="" />
+              <img src={`/images/${project.images.img_1}`} alt="" />
+              <img src={`/images/${project.images.img_2}`} alt="" />
+              <img src={`/images/${project.images.img_3}`} alt="" />
             </div>
           );
         }
       })}
+      <div className="close" onClick={() => props.CloseModel("closeModel")}>
+        <button>CloseMe</button>
+      </div>
     </div>
   );
 }

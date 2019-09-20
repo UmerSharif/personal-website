@@ -11,11 +11,20 @@ export default function ProjectContainer() {
   const HandleClick = projectId => {
     setProject(projectId);
   };
+
+  const handleCloseModel = receivedVal => {
+    if (receivedVal) {
+      setProject("");
+    }
+  };
   /* testing */
 
   return (
     <>
       {project && <BackDrop />}
+      {project && (
+        <ViewDetail projectId={project} CloseModel={handleCloseModel} />
+      )}
       <section className="work-experience">
         <div className="container">
           <div className="title-heading">
@@ -276,7 +285,6 @@ export default function ProjectContainer() {
           </div>
         </div>
       </section>
-      <ViewDetail projectId={project} />
     </>
   );
 }
