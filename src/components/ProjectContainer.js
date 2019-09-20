@@ -56,9 +56,14 @@ export default function ProjectContainer() {
               </div>
               {/* button */}
               <div className="cta">
-                <Link to="#" className="btn">
+                <a
+                  href="https://myeventify.netlify.com/auth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
                   <span>Live Demo</span>
-                </Link>
+                </a>
               </div>
 
               {/* bottom buttons */}
@@ -97,9 +102,14 @@ export default function ProjectContainer() {
               </div>
               {/* button */}
               <div className="cta">
-                <Link to="#" className="btn">
+                <a
+                  href="https://myeventify.netlify.com/auth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
                   <span>Live Demo</span>
-                </Link>
+                </a>
               </div>
 
               {/* bottom buttons */}
@@ -138,9 +148,14 @@ export default function ProjectContainer() {
               </div>
               {/* button */}
               <div className="cta">
-                <Link to="#" className="btn">
+                <a
+                  href="https://myeventify.netlify.com/auth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
                   <span>Live Demo</span>
-                </Link>
+                </a>
               </div>
 
               {/* bottom buttons */}
@@ -179,9 +194,14 @@ export default function ProjectContainer() {
               </div>
               {/* button */}
               <div className="cta">
-                <Link to="#" className="btn">
+                <a
+                  href="https://myeventify.netlify.com/auth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
                   <span>Live Demo</span>
-                </Link>
+                </a>
               </div>
 
               {/* bottom buttons */}
@@ -220,9 +240,14 @@ export default function ProjectContainer() {
               </div>
               {/* button */}
               <div className="cta">
-                <Link to="#" className="btn">
+                <a
+                  href="https://myeventify.netlify.com/auth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
                   <span>Live Demo</span>
-                </Link>
+                </a>
               </div>
 
               {/* bottom buttons */}
@@ -261,9 +286,14 @@ export default function ProjectContainer() {
               </div>
               {/* button */}
               <div className="cta">
-                <Link to="#" className="btn">
+                <a
+                  href="https://myeventify.netlify.com/auth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
                   <span>Live Demo</span>
-                </Link>
+                </a>
               </div>
 
               {/* bottom buttons */}
@@ -277,9 +307,7 @@ export default function ProjectContainer() {
                   className="btn-info btn__common"
                   onClick={() => HandleClick("6")}
                 >
-                  <Link to="#">
-                    <FaInfoCircle className="fa__icons" />
-                  </Link>
+                  <FaInfoCircle className="fa__icons" />
                 </div>
               </div>
             </div>
