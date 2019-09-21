@@ -28,7 +28,7 @@ export default function ProjectContainer() {
       <section className="work-experience">
         <div className="container">
           <div className="title-heading">
-            <h1>Portfolio Projects</h1>
+            <span className="border-bottom">Portfolio Projects</span>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit . Ullam,
               quam vel quae consequuntur hic consectetur eveniet molestias
