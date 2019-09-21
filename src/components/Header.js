@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaWindowClose, FaCode } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 import "./Header.scss";
 
 export default function Header() {
@@ -19,7 +20,7 @@ export default function Header() {
           </div>
           <ul className={active ? "nav-list active" : "nav-list"}>
             <div className="menu-icons close">
-              <FaWindowClose
+              <MdClose
                 className="fa__icons"
                 onClick={() => setActive(!active)}
               />

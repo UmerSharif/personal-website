@@ -1,5 +1,5 @@
 import React from "react";
-import { FaQuoteRight } from "react-icons/fa";
+// import { FaQuoteRight } from "react-icons/fa";
 import Misc from "./Misc";
 
 import "./About.scss";
@@ -14,7 +14,8 @@ export default function About() {
                 "I belive that anything can be achieved through Determination,
                 Hardwork and Perseverance."
               </p>
-              <FaQuoteRight className="fa__icons" />
+              <span className="about-text">ABOUT</span>
+              {/* <FaQuoteRight className="fa__icons" /> */}
             </div>
             <div className="testimonial-customer">
               <img src="/images/profile-me.jpg" alt="" />
