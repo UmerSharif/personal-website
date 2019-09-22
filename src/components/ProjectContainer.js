@@ -246,7 +246,7 @@ export default function ProjectContainer({ id }) {
               {/* button */}
               <div className="cta">
                 <a
-                  href="#"
+                  href="https://umer-khan.netlify.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn"
