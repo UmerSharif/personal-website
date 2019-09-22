@@ -20,13 +20,18 @@ export default function Footer({ id }) {
       <div className="footer" id={id}>
         <div className="social">
           <div>
-            <Link to="#">
+             <a
+              href="https://www.facebook.com/umersharif.khan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookSquare className="social-icons" />
-            </Link>
+			  </a>
+         
           </div>
           <div>
             <a
-              href="https://github.com/UmerSharif/event-manager"
+              href="https://github.com/UmerSharif"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -34,9 +39,13 @@ export default function Footer({ id }) {
             </a>
           </div>
           <div>
-            <Link to="#">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin className="social-icons" />
-            </Link>
+           </a>
           </div>
         </div>
         <div className="email-adress">
