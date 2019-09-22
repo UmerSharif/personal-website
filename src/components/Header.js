@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { FaBars, FaWindowClose, FaCode } from "react-icons/fa";
+import { FaBars, FaCode } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 import "./Header.scss";
 
+import { Link } from "react-scroll";
+
 export default function Header() {
   const [active, setActive] = useState(false);
+
   return (
     <header>
       <div className="container">
@@ -26,22 +28,46 @@ export default function Header() {
               />
             </div>
             <li className="nav-item">
-              <Link to="#" className="nav-link current">
+              <Link to="/" className="nav-link current">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="#" className="nav-link">
+              <Link
+                to="projectcontainer"
+                className="nav-link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Portfolio
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="#" className="nav-link">
+              <Link
+                to="about"
+                className="nav-link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="#" className="nav-link">
+              <Link
+                to="footer"
+                className="nav-link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Contact
               </Link>
             </li>

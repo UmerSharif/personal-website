@@ -2,6 +2,7 @@ footer {
   height: 15rem;
   padding: 2.5rem;
   background-color: #402a67;
+  position: relative;
 }
 
 .footer {
@@ -51,10 +52,28 @@ footer {
 .email-icons {
   font-size: 1.5;
 }
+.up-button {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 320px) {
   .social {
     width: 50%;
+  }
+
+  //upbutton
+  .up-button {
+    position: absolute;
+    right: 3rem;
+
+    .fa__icons {
+      font-size: 3rem;
+      color: #ef4d8d;
+      transition: all 0.25s;
+    }
+    .fa__icons:hover {
+      font-size: 3.5rem;
+    }
   }
 }
 @media screen and (min-width: 350px) {
@@ -71,9 +90,35 @@ footer {
   .social {
     width: 40%;
   }
+  .up-button {
+    position: absolute;
+    right: 9rem;
+
+    .fa__icons {
+      font-size: 5rem;
+      color: #ef4d8d;
+      transition: all 0.25s;
+    }
+    .fa__icons:hover {
+      font-size: 6rem;
+    }
+  }
 }
 @media screen and (min-width: 950px) {
   .social {
     width: 12%;
+  }
+  .up-button {
+    position: absolute;
+    right: 9rem;
+
+    .fa__icons {
+      font-size: 5rem;
+      color: #ef4d8d;
+      transition: all 0.25s;
+    }
+    .fa__icons:hover {
+      font-size: 6rem;
+    }
   }
 }

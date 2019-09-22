@@ -4,10 +4,10 @@ import Misc from "./Misc";
 
 import "./About.scss";
 import Skills from "./Skills";
-export default function About() {
+export default function About({ id }) {
   return (
     <>
-      <section className="testimonials">
+      <section className="testimonials" id={id}>
         <div className="container">
           <div className="testimonial">
             <div className="testimonial-text-box">

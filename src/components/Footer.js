@@ -1,16 +1,23 @@
 import React from "react";
 import "./Footer.scss";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 import {
   FaFacebookSquare,
   FaGithub,
   FaLinkedin,
-  FaEnvelope
+  FaEnvelope,
+  FaArrowCircleUp
 } from "react-icons/fa";
-export default function Footer() {
+
+export default function Footer({ id }) {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <footer>
-      <div className="footer">
+      <div className="footer" id={id}>
         <div className="social">
           <div>
             <Link to="#">
@@ -18,9 +25,13 @@ export default function Footer() {
             </Link>
           </div>
           <div>
-            <Link to="#">
+            <a
+              href="https://github.com/UmerSharif/event-manager"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="social-icons" />
-            </Link>
+            </a>
           </div>
           <div>
             <Link to="#">
@@ -39,6 +50,11 @@ export default function Footer() {
           <p>
             <span>&copy;</span> 2019 Umer K. All Rights Reserved.
           </p>
+        </div>
+        <div className="up-button" onClick={() => scrollToTop()}>
+          <span>
+            <FaArrowCircleUp className="fa__icons" />
+          </span>
         </div>
       </div>
     </footer>

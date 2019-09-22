@@ -1,7 +1,7 @@
 import React from "react";
 import "./MainMessage.scss";
 
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export default function MainMessage() {
   return (
@@ -13,7 +13,15 @@ export default function MainMessage() {
           </h1>
           <h1>I'm full-stack Web developer</h1>
           <div className="cta">
-            <Link to="#" className="btn">
+            <Link
+              to="projectcontainer"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="btn"
+            >
               <span>See Projects</span>
             </Link>
           </div>

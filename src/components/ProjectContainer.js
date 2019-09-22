@@ -4,7 +4,7 @@ import "./ProjectContainer.scss";
 import ViewDetail from "../Model/ViewDetail";
 import BackDrop from "../Model/BackDrop";
 
-export default function ProjectContainer() {
+export default function ProjectContainer({ id }) {
   /* testing */
   const [project, setProject] = useState("");
   const HandleClick = projectId => {
@@ -25,14 +25,17 @@ export default function ProjectContainer() {
           <ViewDetail projectId={project} CloseModel={handleCloseModel} />)
         </>
       )}
-      <section className="work-experience">
+      <section className="work-experience" id={id}>
         <div className="container">
           <div className="title-heading">
             <span className="border-bottom">Portfolio Projects</span>
             <p>
               The following projects includes some of my recent work. All the
               project includes live demo, github links and some screen shots
-              related to each project. Enjoy the show. 💗🧡💛💚💙💜🤎🖤
+              related to each project. Enjoy the show.{" "}
+              <span role="img" aria-label="Hearts">
+                💗🧡💛💚💙💜🤎🖤
+              </span>
             </p>
           </div>
           <div className="activities-grid">

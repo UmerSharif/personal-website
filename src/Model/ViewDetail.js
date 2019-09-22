@@ -1,6 +1,5 @@
 import React from "react";
 import "./ViewDetail.scss";
-import { FaWindowClose, FaArrowLeft } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 
 export default function ViewDetail(props) {
@@ -16,11 +15,13 @@ export default function ViewDetail(props) {
     }
   ];
 
+  let JsxMarkup;
+
   return (
     <div className="project-info-model">
       {Info.map(project => {
         if (props.projectId === project.id) {
-          return (
+          JsxMarkup = (
             <div key={project.id} className="model-container-inner">
               <div className="project-title">
                 <h1>{project.name}</h1>
@@ -33,6 +34,7 @@ export default function ViewDetail(props) {
             </div>
           );
         }
+        return JsxMarkup;
       })}
       <div
         className="close-model-button"
