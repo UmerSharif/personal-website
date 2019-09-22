@@ -36,7 +36,9 @@ export default function Footer() {
           <p>umer7614@gmail.com</p>
         </div>
         <div className="copyright">
-          <p>&copy; 2019 Umer K. All Rights Reserved.</p>
+          <p>
+            <span>&copy;</span> 2019 Umer K. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>

@@ -30,9 +30,9 @@ export default function ProjectContainer() {
           <div className="title-heading">
             <span className="border-bottom">Portfolio Projects</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit . Ullam,
-              quam vel quae consequuntur hic consectetur eveniet molestias
-              tenetur{" "}
+              The following projects includes some of my recent work. All the
+              project includes live demo, github links and some screen shots
+              related to each project. Enjoy the show. 💗🧡💛💚💙💜🤎🖤
             </p>
           </div>
           <div className="activities-grid">

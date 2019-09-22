@@ -3,6 +3,7 @@ import React from "react";
 import Misc from "./Misc";
 
 import "./About.scss";
+import Skills from "./Skills";
 export default function About() {
   return (
     <>
@@ -11,9 +12,15 @@ export default function About() {
           <div className="testimonial">
             <div className="testimonial-text-box">
               <p>
-                "I belive that anything can be achieved through Determination,
-                Hardwork and Perseverance."
+                I am a web developer living in Espoo, Finland. I enjoy building
+                everything from user friendly <br /> and responsive web UIs to
+                rich interactive web apps. With every line of code, I strive to
+                <br />
+                make the web a beautiful place. "I belive that anything can be
+                achieved through <br />
+                Determination, Hardwork and Perseverance."
               </p>
+
               <span className="about-text">ABOUT</span>
               {/* <FaQuoteRight className="fa__icons" /> */}
             </div>
@@ -25,6 +32,7 @@ export default function About() {
         </div>
       </section>
       <Misc />
+      <Skills />
     </>
   );
 }

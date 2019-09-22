@@ -1,20 +1,3 @@
-//sample snippet for card
-// .shadow-1 {
-//     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
-// }
-// .blue-hover {
-//     transition: all 0.25s ease-in;
-//     border-bottom: 5px solid transparent;
-// }
-// .blue-hover:hover {
-//     transform: translateY(-5px);
-//     mar
-//     border: none;
-//     border-bottom: 5px solid #2196fe;
-// }
-
-//sample snippet for card
-
 .work-experience {
   padding: 0;
 }
@@ -35,7 +18,7 @@
   }
 
   p {
-    text-transform: lowercase;
+    text-transform: none;
     margin-top: 2rem;
   }
 }
