@@ -28,7 +28,11 @@ export default function Header() {
               />
             </div>
             <li className="nav-item">
-              <Link to="/" className="nav-link current">
+              <Link
+                to="/"
+                className="nav-link current"
+                onClick={() => setActive(!active)}
+              >
                 Home
               </Link>
             </li>
@@ -41,6 +45,7 @@ export default function Header() {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                onClick={() => setActive(!active)}
               >
                 Portfolio
               </Link>
@@ -54,6 +59,7 @@ export default function Header() {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                onClick={() => setActive(!active)}
               >
                 About
               </Link>
@@ -67,6 +73,7 @@ export default function Header() {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                onClick={() => setActive(!active)}
               >
                 Contact
               </Link>
