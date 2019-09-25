@@ -40,7 +40,7 @@ export default function Footer({ id }) {
           </div>
           <div>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/umer-khan-32932817b/"
               target="_blank"
               rel="noopener noreferrer"
             >
