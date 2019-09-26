@@ -3,7 +3,7 @@
 .testimonials {
   margin-top: 3.5rem;
   width: 100%;
-  height: 80vh;
+  height: 88vh;
 
   background: linear-gradient(
       135deg,
@@ -96,5 +96,9 @@
     height: 22.7rem;
     background: url("/images/wave-large-reversed.png");
     background-size: cover;
+  }
+  .testimonial {
+    position: absolute;
+    top: 73%;
   }
 }
