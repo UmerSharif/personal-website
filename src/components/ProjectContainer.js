@@ -34,7 +34,7 @@ export default function ProjectContainer({ id }) {
               project includes live demo, github links and some screen shots
               related to each project. Enjoy the show.{" "}
               <span role="img" aria-label="Hearts">
-                💗🧡💛💚💙💜🤎🖤
+                💗🧡💛💚💙💜🖤
               </span>
             </p>
           </div>
