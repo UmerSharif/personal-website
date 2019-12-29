@@ -40,6 +40,52 @@ export default function ProjectContainer({ id }) {
           </div>
           <div className="activities-grid">
             <div className="activities-grid-item ">
+              <h1>Pixel Art</h1>
+              <h2>Pixel Art App</h2>
+
+              <p>
+                Unleash your creativity with this fun pixel art app. Created
+                with Reactjs, this lets you draw pixel art.
+              </p>
+              <hr className="hr__line" />
+              <div className="technologies">
+                <div>ReactJs</div>
+                <div>HTML5</div>
+                <div>CSS3</div>
+                <div>Javascript</div>
+              </div>
+              {/* button */}
+              <div className="cta">
+                <a
+                  href="https://upixel-art.netlify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  <span>Live Demo</span>
+                </a>
+              </div>
+
+              {/* bottom buttons */}
+              <div className="bottom-buttons">
+                <div className="btn-github btn__common">
+                  <a
+                    href="https://github.com/UmerSharif/Pixel-Art-App"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithubSquare className="fa__icons" />
+                  </a>
+                </div>
+                <div
+                  className="btn-info btn__common"
+                  onClick={() => HandleClick("7")}
+                >
+                  <FaInfoCircle className="fa__icons" />
+                </div>
+              </div>
+            </div>
+            <div className="activities-grid-item ">
               <h1>Eventify</h1>
               <h2>Event Manager App</h2>
 

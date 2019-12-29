@@ -51,6 +51,14 @@ export default function ViewDetail(props) {
         img_1: "frogger-1.PNG",
         img_2: ""
       }
+    },
+    {
+      id: "7",
+      name: "Pixel Art",
+      images: {
+        img_1: "pixelart.PNG",
+        img_2: "pixelcat1.PNG"
+      }
     }
   ];
 
